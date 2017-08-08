@@ -114,8 +114,6 @@ class Plotter(object):
             fmt = self.GetFmt(run_type)
             lbl = self.GetLbl(run_type)
             plots.append(axes.plot(xs, ys, fmt, label=lbl)[0])
-            if axes is None:
-                axes = plots[0].get_axes()
 
         if xlabel is not None:
             axes.set_xlabel(xlabel)
